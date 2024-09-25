@@ -54,4 +54,7 @@
     animation-iteration-count: infinite;
     animation-fill-mode: both;
   }
+  .h-85 {
+    height: 85vh;
+  }
 }

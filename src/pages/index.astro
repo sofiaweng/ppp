@@ -5,18 +5,29 @@ import Link from '../components/Link.astro';
 
 ---
 <MainLayout title="Titel">
-	<article class="bg-[url('src/img/bg.png')] bg-no-repeat bg-auto" >
-	<div class="lg:grid md:grid-cols-2">
-		<div class="order-2 self-center">
-			<h1>Sofia Weng </h1>
-			<h2>Multimediedesigner, der er vild med at lave grafik</h2>	
+	<article class="bg-[url('src/img/bg.png')] bg-no-repeat bg-auto grid gap-5 border-b border-solid border-black grid h-85 py-10 overflow-hidden" >
+	<div class="md:grid md:grid-cols-2 grid self-end mx-5">
+		<div class="order-2 lg:order-1  m-auto   grid w-1/2 md:w-11/12 lg:w-8/12 md:relative ">
+		  <div class="bg-[url('src/img/lines.svg')] bg-no-repeat bg-contain   md:absolute lines_moving  -bottom-96 aspect-[370/438] "> 
+			<img class="   " src="/src/img/portrait.png" alt="">
+		  </div>
 		</div>
-		<div class="order-1 bg-[url('src/img/lines.svg')] bg-no-repeat bg-contain lines_moving ">
-		   <img class="w-11/12 " src="/src/img/portrait.png" alt="">
+		<div class="order-1 md:order-2 self-end text-center md:text-left ">
+			<h1 class="md:text-8xl">Sofia Weng </h1>
+			<h2 class="uppercase ">Multimediedesigner, der er vild med at lave grafik</h2>	
 		</div>
 	</div>
-	<div>
-		knap
+	<a href="#ommig" class=" m-auto md:relative aspect-[49-26] mt-10">
+		<div class="bg-[url('src/img/pilned.svg')] bg-no-repeat bg-contain justify-self-center hover:bg-[url('src/img/pilned-hover.svg')] h-max py-2 md:absolute -bottom-36 w-14  ">
+		<p class="text-transparent">ned-knap</p>
 	</div>
+	</a>
+	</article>
+	<article id="ommig">
+		<h1>OM MIG</h1>
+		<p></p>
+	</article>
+	<article id="erfaring">
+		
 	</article>
 </MainLayout>
