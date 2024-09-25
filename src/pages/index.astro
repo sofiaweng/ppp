@@ -2,10 +2,11 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
-
+import 'animate.css';
+import "aos/dist/aos.css";
 ---
 <MainLayout title="Titel">
-	<article class="bg-[url('src/img/bg2.png')] bg-no-repeat bg-auto grid gap-5 border-b border-solid border-black grid h-85 py-10 overflow-hidden" >
+	<article class="  bg-[url('src/img/bg2.png')] bg-no-repeat bg-auto grid gap-5 border-b border-solid border-black grid h-85 py-10 overflow-hidden" >
 	<div class="md:grid md:grid-cols-2 grid self-end mx-5">
 		<div class="order-2 lg:order-1  m-auto   grid w-1/2 md:w-11/12 lg:w-8/12 md:relative ">
 		  <div class="bg-[url('src/img/lines.svg')] bg-no-repeat bg-contain   md:absolute lines_moving  -bottom-96 aspect-[370/438] "> 
@@ -13,19 +14,21 @@ import Link from '../components/Link.astro';
 		  </div>
 		</div>
 		<div class="order-1 md:order-2 self-end text-center md:text-left ">
-			<h1 class="md:text-8xl">Sofia Weng </h1>
-			<h2 class="font-semibold uppercase pt-2 w-11/12 m-auto md:m-0 ">Multimediedesigner, der er vild med at lave grafik</h2>	
+			<h1 class="md:text-8xl pt-8 md:pt-0">Sofia Weng </h1>
+			<h2 class=" uppercase pt-2 w-11/12 m-auto md:m-0 ">Multimediedesigner, der er vild med at lave grafik!</h2>	
 		</div>
 	</div>
-	<a href="#ommig" class=" m-auto md:relative aspect-[49-26] mt-10">
-		<div class="bg-[url('src/img/pilned.svg')] bg-no-repeat bg-contain justify-self-center hover:bg-[url('src/img/pilned-hover.svg')] h-max py-2 md:absolute -bottom-36 w-14  ">
+	<a href="#ommig" class="bounce-top m-auto md:relative aspect-[49-26] mt-10">
+		<div class=" bg-[url('src/img/pilned.svg')] bg-no-repeat bg-contain justify-self-center hover:bg-[url('src/img/pilned-hover.svg')] h-max py-2 md:absolute -bottom-36 w-14  ">
 		<p class="text-transparent">ned-knap</p>
 	</div>
 	</a>
 	</article>
-	<article id="ommig" class="relative overflow-hidden border-b border-solid border-black">
-		<div class="m-auto max-w-screen-lg px-5 py-8">
-			<h1 class="mb-5">OM MIG</h1>
+	<article id="ommig" class=" relative overflow-hidden border-b border-solid border-black">
+		<div  data-aos="fade-up"
+		data-aos-delay="200" 
+		class="m-auto max-w-screen-lg px-5 py-8">
+			<h1 class="mb-5 animate__bounce">OM MIG</h1>
 		<p>
 			Mit navn er Sofia Weng, jeg er 21 år og til dagligt studerer jeg multimediedesign på KEA og er på mit tredje semester. 
 			<br><br>
@@ -36,11 +39,43 @@ import Link from '../components/Link.astro';
 		</div>
 		<img class="absolute bottom-0 -z-10 w-1/4 right-0" src="src/img/bg2.png" alt="">
 	</article>
-	<article id="erfaring" class="m-auto max-w-screen-lg px-5 py-8">
-		<h1>ERFARING & KOMPETENCER</h1>
-		<h2>Disse programmer arbejder jeg med indenfor kodning</h2>
+	<article id="erfaring" >
+		<h1 class="m-auto max-w-screen-lg px-5 pt-8">ERFARING & KOMPETENCER</h1>
+		<h2 class="m-auto max-w-screen-lg px-5 py-5">
+			Front-end design værktøjer, jeg benytter mig:
+		</h2>
+		<div class="border-black border-t col-span-2">
+			 <div class="overflow-hidden whitespace-nowrap border-black border-b py-2 md:py-4"> 
+				<div class="inline-block animate-scroll min-w-full">
+					<span class=" text-4xl md:text-4xl text-center m-0 flex flex-row gap-6">
+						<span class="">HTML</span>
+						<span>CSS</span>
+						<span>JS</span>
+						<span>ALPHINE </span>
+						<span>TAILWIND</span> 
+						<span>HTML</span>
+						<span>CSS</span>
+						<span>JS</span>
+						<span>ALPHINE </span>
+						<span>TAILWIND</span> 
+						<span>HTML</span>
+						<span>CSS</span>
+						<span>JS</span>
+						<span>ALPHINE </span>
+						<span>TAILWIND</span> 
+					</span> 
+				</div> 
+			</div> 
+		</div>
 	</article>
 	<article id="forventing" class="m-auto max-w-screen-lg px-5 py-8">
 		<h1>Mine forventninger med praktik</h1>
 	</article>
 </MainLayout>
+
+
+<script>
+	import AOS from "aos";
+	AOS.init();
+  </script>
+  
