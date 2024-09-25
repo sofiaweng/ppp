@@ -5,10 +5,18 @@ import Link from '../components/Link.astro';
 
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-	
+	<article class="bg-[url('src/img/bg.png')] bg-no-repeat bg-auto" >
+	<div class="lg:grid md:grid-cols-2">
+		<div class="order-2 self-center">
+			<h1>Sofia Weng </h1>
+			<h2>Multimediedesigner, der er vild med at lave grafik</h2>	
+		</div>
+		<div class="order-1 bg-[url('src/img/lines.svg')] bg-no-repeat bg-contain lines_moving ">
+		   <img class="w-11/12 " src="/src/img/portrait.png" alt="">
+		</div>
+	</div>
+	<div>
+		knap
+	</div>
 	</article>
 </MainLayout>
