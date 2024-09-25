@@ -15,7 +15,24 @@
     height: auto;
     display: block;
   }
-
+  html {
+    font-family: "nobel", sans-serif;
+  }
+  h1 {
+    @apply text-5xl;
+    font-family: "salted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  h2 {
+    @apply text-2xl;
+    font-family: "nobel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  h3 {
+    @apply text-xl;
+  }
   @keyframes lines_moving_kf {
     0% {
       background-image: url(/src/img/lines.svg);
