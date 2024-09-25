@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         customWhite: "#F7F7F7",
+        customWhite300: "rgba(247, 247, 247, 0.9)",
       },
     },
   },
