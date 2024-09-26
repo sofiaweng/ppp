@@ -6,7 +6,7 @@ import 'animate.css';
 import "aos/dist/aos.css";
 ---
 <MainLayout title="Titel">
-	<article class="  bg-[url('src/img/bg2.png')] bg-no-repeat bg-auto grid gap-5 border-b border-solid border-black grid h-85 py-10 overflow-hidden" >
+	<article class="  bg-[url('src/img/bg.png')] bg-no-repeat bg-auto grid gap-5 border-b border-solid border-black grid h-85 py-10 overflow-hidden" >
 	<div class="md:grid md:grid-cols-2 grid self-end mx-5">
 		<div class="order-2 lg:order-1  m-auto   grid w-1/2 md:w-11/12 lg:w-8/12 md:relative ">
 		  <div class="bg-[url('src/img/lines.svg')] bg-no-repeat bg-contain   md:absolute lines_moving  -bottom-96 aspect-[370/438] "> 
@@ -15,7 +15,7 @@ import "aos/dist/aos.css";
 		</div>
 		<div class="order-1 md:order-2 self-end text-center md:text-left ">
 			<h1 class="md:text-8xl pt-8 md:pt-0">Sofia Weng </h1>
-			<h2 class=" uppercase pt-2 w-11/12 m-auto md:m-0 ">Multimediedesigner, der er vild med at lave grafik!</h2>	
+			<h2 class=" uppercase pt-2 w-11/12 m-auto md:m-0 ">Multimediedesigner, der er vild med at lave grafik</h2>	
 		</div>
 	</div>
 	<a href="#ommig" class="bounce-top m-auto md:relative aspect-[49-26] mt-10">
@@ -25,11 +25,18 @@ import "aos/dist/aos.css";
 	</a>
 	</article>
 	<article id="ommig" class=" relative overflow-hidden border-b border-solid border-black">
-		<div  data-aos="fade-up"
-		data-aos-delay="200" 
-		class="m-auto max-w-screen-lg px-5 py-8">
-			<h1 class="mb-5 animate__bounce">OM MIG</h1>
-		<p>
+		<div  
+		class="m-auto max-w-screen-lg px-5 py-8 grid md:grid-cols-2">
+		<div
+		data-aos="fade-up"
+		data-aos-delay="200" >
+			<img class="w-3/4 m-auto" src="src/img/portrait2.png" alt="">
+		</div>
+		<div
+		data-aos="fade-up"
+		data-aos-delay="200" class="self-center">
+				<h1 class="mb-5 text-center ">OM MIG</h1>
+		<p class="text-justify">
 			Mit navn er Sofia Weng, jeg er 21 år og til dagligt studerer jeg multimediedesign på KEA og er på mit tredje semester. 
 			<br><br>
 			Jeg har erfaring indenfor front-end design og samtlige adobe
@@ -37,7 +44,9 @@ import "aos/dist/aos.css";
 			<br><br>
 			Jeg vil beskrive mig selv som en flittig, opmærksom og detaljeorienteret person, som løser alle opgaverne med grundighed. Samtidigt er jeg åben for konstruktiv kritik og stræber efter at blive bedre.</p>
 		</div>
-		<img class="absolute bottom-0 -z-10 w-1/4 right-0" src="src/img/bg2.png" alt="">
+		</div>
+		
+		<img class="absolute bottom-0 -z-10 w-1/4 right-0" src="src/img/bg.png" alt="">
 	</article>
 	<article id="erfaring" >
 		<h1 class="m-auto max-w-screen-lg px-5 pt-8">ERFARING & KOMPETENCER</h1>
