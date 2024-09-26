@@ -9,20 +9,18 @@ import "aos/dist/aos.css";
 ---
 <MainLayout title="Titel">
 	<article class="  bg-[url('src/img/bg.png')] bg-no-repeat bg-auto grid gap-5 border-b border-solid border-black grid h-85 py-10 overflow-hidden" >
-	<div class="md:grid md:grid-cols-2 grid self-end mx-5 md:p-20">
-		<div class="order-2 lg:order-1  m-auto   grid w-1/2 md:w-11/12 lg:w-8/12 md:relative ">
-		  <div class="bg-[url('src/img/lines.svg')] bg-no-repeat bg-contain   md:absolute lines_moving  -bottom-96 aspect-[370/438] "> 
-			<img class="   " src="/src/img/portrait.png" alt="">
-		  </div>
+	<div class="md:grid md:grid-cols-3 grid self-end mx-5 md:p-20">
+		<div class="order-2 lg:order-1 col-span-1 m-auto   grid w-1/2 md:w-11/12 lg:w-8/12 md:relative ">
+		
 		</div>
-		<div class="order-1 md:order-2 self-end text-center md:text-left ">
+		<div class="order-1 col-span-2 md:order-2 self-end text-center md:text-left ">
 			
-			<h1 class="md:text-8xl pt-8 md:pt-0">Sofia Weng </h1>
-			<h2 class=" uppercase pt-2 w-11/12 m-auto md:m-0 ">Multimediedesigner, der er vild med at lave grafik</h2>	
+			<h1 class="text-7xl md:text-8xl pt-8  md:pt-0 border-b border-solid border-black">Sofia Weng </h1>
+			<h2 class=" uppercase pt-5 w-11/12 m-auto md:m-0 ">Multimediedesigner, der er vild med at lave grafik</h2>	
 		</div>
 	</div>
 	<a href="#ommig" class="bounce-top m-auto md:relative aspect-[49-26] mt-10">
-		<div class=" bg-[url('src/img/pilned.svg')] bg-no-repeat bg-contain justify-self-center hover:bg-[url('src/img/pilned-hover.svg')] h-max py-2 md:absolute -bottom-36 w-14  ">
+		<div class=" bg-[url('src/img/pilned.svg')] bg-no-repeat bg-contain justify-self-center hover:bg-[url('src/img/pilned-hover.svg')] h-max py-2 md:absolute -bottom-28 w-14  ">
 		<p class="text-transparent">ned-knap</p>
 	</div>
 	</a>
@@ -57,12 +55,12 @@ import "aos/dist/aos.css";
 	<article id="erfaring" >
 		<div class="m-auto max-w-screen-lg px-5 pt-8 text-center">
 		<Heading>
-		<h1 >ERFARING & KOMPETENCER</h1>
+		<h1 class="w-min" >ERFARING & KOMPETENCER</h1>
 	</Heading></div>
 		<h2 class="uppercase m-auto max-w-screen-lg px-5 py-5">
 			Front-end design værktøjer, jeg benytter mig:
 		</h2>
-		<div class="border-black border-t col-span-2">
+		<div class="border-black border-t col-span-2 overflow-hidden">
 			 <div class="overflow-hidden whitespace-nowrap border-black border-b py-2 md:py-4"> 
 				<div class="inline-block animate-scroll min-w-full">
 					<span class=" text-4xl md:text-4xl text-center m-0 flex flex-row gap-6">
@@ -86,15 +84,16 @@ import "aos/dist/aos.css";
 			</div> 
 		</div>
 		<p class="px-5 pt-4">Mine illustrationer er et gennemgående tema i mine projekter, derudover blabla</p>
-		<div class="md:w-2/4">
+		<div class="md:w-2/4 px-5">
 	<Billede>
 		<video class=" p-8 m-auto" src="src/vid/girltalk.mov" autoplay></video>
 	</Billede>
 </div>
+<div class="px-5">
 <Billede>
 	<video class="p-8 m-auto " src="src/vid/girltalkwebfeature.mov" autoplay ></video>
 	</article>
-</Billede>
+</Billede></div>
 	<article id="forventing" class="m-auto max-w-screen-lg px-5 py-8">
 		<h1>Mine forventninger med praktik</h1>
 
