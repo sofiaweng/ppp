@@ -124,19 +124,23 @@ import "aos/dist/aos.css";
 			</div> 
 		</div>
 
-	<h2 class="font-semibold italic uppercase px-5 py-5 text-center">MINE TIDLIGERE PROJEKTER</h2>
+	<h2
+	data-aos="fade-in"
+		data-aos-delay="200"
+	 class="font-semibold italic uppercase px-5 py-5 pt-8 text-center">MINE TIDLIGERE PROJEKTER</h2>
 
 	<section 
 
-	id="girltalk" class="md:grid md:grid-cols-3 m-auto max-w-screen-lg px-5 py-8">
+	id="girltalk" class="md:grid md:grid-cols-3 m-auto max-w-screen-lg px-5 py-8 ">
 		<div
-
-		 class="grid self-center gap-8 md:col-span-2">
-			<div data-aos="fade-right"
+		 class="z-12 grid self-center gap-5 md:col-span-2 ">
+			<div 
+			data-aos="fade-right"
 		data-aos-delay="400"
-			 class="">
+			 class="z-10">
+			 <!-- bg-[url('src/img/bg2.png')] bg-cover  -->
 				<Billede>
-					<div class="p-7">
+					<div class="p-7 ">
 						<h3 class="font-semibold uppercase">Girltalk</h3>
 						<p class="py-2">Gruppeprojekt for girltalk, en webfeature.
 							<br>
@@ -146,22 +150,25 @@ import "aos/dist/aos.css";
 				</Billede>
 			</div>
 			<div
-			data-aos="fade-right"
-		data-aos-delay="400"
-			 class="rotate-2">
+			data-aos="fade-left"
+		data-aos-delay="400">
+			 <div class="rotate-6 ">
 				<Billede>
 					<video class="p-5 m-auto " src="src/vid/girltalkwebfeature.mov" autoplay loop muted ></video>
 					
 				</Billede>
 			</div>
+			</div>
 		</div>
 		<div 
-		data-aos="fade-left"
+	data-aos="fade-left"
 		data-aos-delay="400"
-		class=" md:col-span-1 pt-8 md:pt-0 -rotate-2">
+		class="md:col-span-1 pt-8 md:pt-0  ">
+		<div class="-rotate-3 md:-ml-20 -z-10 ">
 		<Billede>
 			<video  class=" p-5 m-auto" src="src/vid/girltalk.mov" autoplay loop muted></video>
 		</Billede>
+	</div>
 		</div>
 	</section>
 
