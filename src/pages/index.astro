@@ -59,17 +59,31 @@ import "aos/dist/aos.css";
 	<article id="erfaring" class="overflow-hidden">
 		<div data-aos="fade-down"
 		data-aos-delay="200" 
-		class="m-auto max-w-screen-lg px-5 pt-8 text-center">
+		class="m-auto max-w-screen-lg px-5 pt-8 pb-2 text-center">
 		<Heading>
 		<h1 class="w-min md:w-max" >ERFARING & KOMPETENCER</h1>
 	</Heading>
+
 </div>
 		<h2
 		data-aos="fade-down"
 		data-aos-delay="200"
-		 class="font-semibold uppercase m-auto max-w-screen-lg px-5 py-5 text-center">
+		 class="font-semibold italic uppercase m-auto max-w-screen-lg px-5 py-5 text-center">
 			Front-end & digital design værktøjer, jeg benytter mig:
 		</h2>
+		
+		<div
+		data-aos="fade-in"
+		data-aos-delay="200"
+		 class="flex  flex-wrap justify-center gap-5 pb-5 px-5">
+			<img class="w-20" src="src/img/programikon/figma.svg" alt="figma ikon">
+			<img class="w-20" src="src/img/programikon/vscode.svg" alt="vscode ikon">
+			<img class="w-20" src="src/img/programikon/illustrator.svg" alt="illustrator ikon">
+			<img class="w-20" src="src/img/programikon/indesign.svg" alt="indesign ikon">
+			<img class="w-20" src="src/img/programikon/premier.svg" alt="premier pro ikon">
+			<img class="w-20" src="src/img/programikon/photoshop.svg" alt="photoshop ikon">
+		</div>
+		
 		<div data-aos="fade-in"
 		data-aos-delay="200"
 		 class="border-black border-t col-span-2 overflow-hidden">
@@ -109,18 +123,7 @@ import "aos/dist/aos.css";
 				</div> 
 			</div> 
 		</div>
-		<div
-		data-aos="fade-in"
-		data-aos-delay="200"
-		 class="flex  flex-wrap justify-center gap-5 py-5 px-5">
-			<img class="w-20" src="src/img/programikon/figma.svg" alt="figma ikon">
-			<img class="w-20" src="src/img/programikon/vscode.svg" alt="vscode ikon">
-			<img class="w-20" src="src/img/programikon/illustrator.svg" alt="illustrator ikon">
-			<img class="w-20" src="src/img/programikon/indesign.svg" alt="indesign ikon">
-			<img class="w-20" src="src/img/programikon/premier.svg" alt="premier pro ikon">
-			<img class="w-20" src="src/img/programikon/photoshop.svg" alt="photoshop ikon">
-		</div>
-		<h2 class="font-semibold uppercase px-5 py-5 text-center">MINE TIDLIGERE PROJEKTER</h2>
+		<h2 class="font-semibold italic uppercase px-5 py-5 text-center">MINE TIDLIGERE PROJEKTER</h2>
 		<div class="md:w-2/4 px-5">
 	<Billede>
 		<video class=" p-8 m-auto" src="src/vid/girltalk.mov" autoplay></video>
@@ -131,15 +134,19 @@ import "aos/dist/aos.css";
 	<video class="p-8 m-auto " src="src/vid/girltalkwebfeature.mov" autoplay ></video>
 	</article>
 </Billede></div>
+
 	<article id="forventing" class="m-auto max-w-screen-lg px-5 py-8">
-		<h1>Mine forventninger med praktik</h1>
+		<Heading>
+			<h1 class="w-min md:w-max">Mine forventninger med praktik</h1>
+		</Heading>
+		
 
 	</article>
-</MainLayout>
-
 
 <script>
 	import AOS from "aos";
 	AOS.init();
   </script>
   
+</MainLayout>
+
