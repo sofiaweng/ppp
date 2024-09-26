@@ -123,30 +123,41 @@ import "aos/dist/aos.css";
 				</div> 
 			</div> 
 		</div>
-		<h2 class="font-semibold italic uppercase px-5 py-5 text-center">MINE TIDLIGERE PROJEKTER</h2>
-		<div class="md:w-2/4 px-5">
-	<Billede>
-		<video class=" p-8 m-auto" src="src/vid/girltalk.mov" autoplay></video>
-	</Billede>
-</div>
-<div class="px-5">
-<Billede>
-	<video class="p-8 m-auto " src="src/vid/girltalkwebfeature.mov" autoplay ></video>
-	</article>
-</Billede></div>
 
+	<h2 class="font-semibold italic uppercase px-5 py-5 text-center">MINE TIDLIGERE PROJEKTER</h2>
+
+	<div id="girltalk" class="md:grid md:grid-cols-3 m-auto max-w-screen-lg px-5">
+		<div class="grid self-center gap-8 md:col-span-2">
+			<div class="">
+				<Billede>
+					<div class="p-7">
+						<h3 class="font-semibold uppercase">Girltalk</h3>
+						<p>Gruppeprojekt for girltalk, en webfeature.
+							<br>
+							Jeg stod for illustrationer , kodning af hero & graphic motions til højre</p>
+						<Link></Link>
+					</div>
+				</Billede>
+			</div>
+			<div class="">
+				<Billede>
+					<video class="p-5 m-auto " src="src/vid/girltalkwebfeature.mov" autoplay loop muted ></video>
+					
+				</Billede>
+			</div>
+		</div>
+		<div class=" md:col-span-1 pt-8 md:pt-0">
+		<Billede>
+			<video  class=" p-5 m-auto" src="src/vid/girltalk.mov" autoplay loop muted></video>
+		</Billede>
+		</div>
+	</div>
 	<article id="forventing" class="m-auto max-w-screen-lg px-5 py-8">
 		<Heading>
 			<h1 class="w-min md:w-max">Mine forventninger med praktik</h1>
 		</Heading>
-		
-
 	</article>
 
-<script>
-	import AOS from "aos";
-	AOS.init();
-  </script>
-  
+
 </MainLayout>
 
