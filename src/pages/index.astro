@@ -2,6 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
+import BilledeUdenTape from '../components/BilledeUdenTape.astro';
 import Billede from '../components/Billede.astro';
 import Heading from '../components/Heading.astro';
 import 'animate.css';
@@ -152,11 +153,11 @@ import "aos/dist/aos.css";
 			<div
 			data-aos="fade-right"
 		data-aos-delay="500">
-			 <div class="rotate-6 ">
-				<Billede>
+			 <div class="rotate-6 z-5">
+				<BilledeUdenTape>
 					<video class="p-5 m-auto " src="src/vid/girltalkwebfeature.mov" autoplay loop muted ></video>
 					
-				</Billede>
+				</BilledeUdenTape>
 			</div>
 			</div>
 		</div>
@@ -164,10 +165,10 @@ import "aos/dist/aos.css";
 	data-aos="fade-left"
 		data-aos-delay="400"
 		class="md:col-span-1 pt-8 md:pt-0  ">
-		<div class="-rotate-3 md:-ml-20 -z-10 ">
-		<Billede>
+		<div class="-rotate-3 md:-ml-28 -z-10 ">
+		<BilledeUdenTape>
 			<video  class=" p-5 m-auto" src="src/vid/girltalk.mov" autoplay loop muted></video>
-		</Billede>
+		</BilledeUdenTape>
 	</div>
 		</div>
 	</section>
@@ -189,9 +190,9 @@ import "aos/dist/aos.css";
 			</div>
 		<div class="-rotate-6">
 		
-		<Billede>
+		<BilledeUdenTape>
 			<video  class=" p-5 m-auto" src="src/vid/girltalkwebfeature.mov" autoplay loop muted></video>
-		</Billede>
+		</BilledeUdenTape>
 
 		</div>
 	</section>
