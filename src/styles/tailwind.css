@@ -21,9 +21,8 @@
   }
   h1 {
     @apply text-5xl;
-    font-family: "salted", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Nobel", sans-serif;
+    font-weight: 800;
   }
   h2 {
     @apply text-2xl;
