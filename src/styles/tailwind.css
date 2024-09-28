@@ -34,27 +34,7 @@
   h3 {
     @apply text-xl;
   }
-  @keyframes lines_moving_kf {
-    0% {
-      background-image: url(/src/img/lines.svg);
-    }
 
-    50% {
-      background-image: url(/src/img/lines2.svg);
-    }
-
-    100% {
-      background-image: url(/src/img/lines.svg);
-    }
-  }
-
-  .lines_moving {
-    animation-name: lines_moving_kf;
-    animation-duration: 3s;
-    animation-timing-function: cubic-bezier(0, 0.97, 0, 0.96);
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-  }
   .h-85 {
     height: 85vh;
   }
