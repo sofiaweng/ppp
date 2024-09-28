@@ -18,11 +18,14 @@
   html {
     font-family: "nobel", sans-serif;
     scroll-behavior: smooth;
+    @apply text-customBlack;
   }
   h1 {
     @apply text-5xl;
     font-family: "Nobel", sans-serif;
     font-weight: 800;
+    @apply uppercase;
+    @apply text-center;
   }
   h2 {
     @apply text-2xl;
