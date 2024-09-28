@@ -15,11 +15,11 @@ import whitelogo from "src/assets/images/white_logo.webp";
             </div>
             <nav id="desktopmenu" class="hidden lg:block  text-sm self-center">
                 <ul class="flex flex-row gap-8">
-                    <li><a href="#ommig" class="hover:border-b border-solid border-black transition-all duration-300">OM MIG</a></li>
-                    <li><a href="#erfaring" class="hover:border-b border-solid border-black transition-all duration-300">ERFARING & KOMPETENCER</a></li>
-                    <li><a href="#forventninger" class=" hover:border-b border-solid border-black transition-all duration-300">MINE FORVENTNINGER</a></li>
-                    <li><a href="#" class="hover:border-b border-solid border-black transition-all duration-300">ig</a></li>
-                    <li><a href="#" class="hover:border-b border-solid border-black transition-all duration-300">linkedin</a></li>
+                    <li><a href="#ommig" class="hover:border-b border-solid border-customBlack transition-all duration-300">OM MIG</a></li>
+                    <li><a href="#erfaring" class="hover:border-b border-solid border-customBlack transition-all duration-300">ERFARING & KOMPETENCER</a></li>
+                    <li><a href="#forventninger" class=" hover:border-b border-solid border-customBlack transition-all duration-300">MINE FORVENTNINGER</a></li>
+                    <li><a href="#" class="hover:border-b border-solid border-customBlack transition-all duration-300">ig</a></li>
+                    <li><a href="#" class="hover:border-b border-solid border-customBlack transition-all duration-300">linkedin</a></li>
                 </ul>
             </nav>
             <!-- Burgermenu -->
@@ -27,16 +27,16 @@ import whitelogo from "src/assets/images/white_logo.webp";
                 <template x-if="!showmenu">
                     <!-- Burgerikon -->
                     <div>
-                        <span class="block w-10 h-1 bg-black my-2"></span>
-                        <span class="block w-10 h-1 bg-black my-2"></span>
-                        <span class="block w-10 h-1 bg-black my-2"></span>
+                        <span class="block w-10 h-1 bg-customBlack my-2"></span>
+                        <span class="block w-10 h-1 bg-customBlack my-2"></span>
+                        <span class="block w-10 h-1 bg-customBlack my-2"></span>
                     </div>
                 </template>
                 <template x-if="showmenu">
                     <!-- Traditionelt kryds -->
                     <div class="relative w-10 h-10 flex items-center justify-center">
-                        <span class="absolute block w-full h-1 bg-black transform rotate-45 ease-in"></span>
-                        <span class="absolute block w-full h-1 bg-black transform -rotate-45 ease-in"></span>
+                        <span class="absolute block w-full h-1 bg-customBlack transform rotate-45 ease-in"></span>
+                        <span class="absolute block w-full h-1 bg-customBlack transform -rotate-45 ease-in"></span>
                     </div>
                 </template>
             </div>
@@ -46,10 +46,10 @@ import whitelogo from "src/assets/images/white_logo.webp";
             x-show="showmenu" x-transition x-on:click.outside="showmenu = false">
             <ul class="flex flex-col gap-5  ">
      
-                <li class="border-b border-t pt-5 border-solid border-black"><a href="#ommig" class="hover:font-semibold transition-all duration-200 ease-in-out">OM MIG</a></li>
-                <li class="border-b border-solid border-black "><a href="#erfaring" class="hover:font-semibold transition-all duration-200 ease-in-out">ERFARING & KOMPETENCER</a></li>
-                <li class="border-b border-solid border-black "><a href="#forventninger" class="hover:font-semibold  transition-all duration-200 ease-in-out">MINE FORVENTNINGER</a></li>
-                <li class="border-b border-solid border-black "><a href="#" class="hover:font-semibold transition-all duration-200  ease-in-out">ig</a></li>
+                <li class="border-b border-t pt-5 border-solid border-customBlack"><a href="#ommig" class="hover:font-semibold transition-all duration-200 ease-in-out">OM MIG</a></li>
+                <li class="border-b border-solid border-customBlack "><a href="#erfaring" class="hover:font-semibold transition-all duration-200 ease-in-out">ERFARING & KOMPETENCER</a></li>
+                <li class="border-b border-solid border-customBlack "><a href="#forventninger" class="hover:font-semibold  transition-all duration-200 ease-in-out">MINE FORVENTNINGER</a></li>
+                <li class="border-b border-solid border-customBlack "><a href="#" class="hover:font-semibold transition-all duration-200  ease-in-out">ig</a></li>
                 <li class=""><a href="#" class="hover:font-semibold transition-all duration-200 ease-in-out">linkedin</a></li>
 
             </ul>
