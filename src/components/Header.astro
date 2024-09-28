@@ -13,14 +13,17 @@ import whitelogo from "src/assets/images/white_logo.webp";
                     <img class="w-28" src="/src/img/logo.svg" alt="logo">
                 </a>
             </div>
-            <nav id="desktopmenu" class="hidden lg:block  text-sm self-center">
-                <ul class="flex flex-row gap-8">
-                    <li><a href="#ommig" class="hover:border-b border-solid border-customBlack transition-all duration-300">OM MIG</a></li>
-                    <li><a href="#erfaring" class="hover:border-b border-solid border-customBlack transition-all duration-300">ERFARING & KOMPETENCER</a></li>
-                    <li><a href="#forventninger" class=" hover:border-b border-solid border-customBlack transition-all duration-300">MINE FORVENTNINGER</a></li>
-                    <li><a href="#" class="hover:border-b border-solid border-customBlack transition-all duration-300">ig</a></li>
-                    <li><a href="#" class="hover:border-b border-solid border-customBlack transition-all duration-300">linkedin</a></li>
+            <nav id="desktopmenu" class="hidden lg:block self-center">
+                <div class="flex flex-row gap-8">
+                <ul class="flex flex-row gap-8 self-center">
+                    <li><a href="#ommig" class=" font-semibold hover:border-b-2 border-solid border-customBlack  transition-all duration-300">OM MIG</a></li>
+                    <li><a href="#erfaring" class=" font-semibold hover:border-b-2 border-solid border-customBlack transition-all duration-300">ERFARING & KOMPETENCER</a></li>
+                    <li><a href="#forventninger" class="font-semibold  hover:border-b-2 border-solid border-customBlack transition-all duration-300">MINE FORVENTNINGER</a></li>
                 </ul>
+                <a href="/">
+                    <img class="w-10 hover:scale-110 duration-200 ease-linear" src="/src/img/linkedin.svg" alt="linkedin logo">
+                </a>
+            </div>
             </nav>
             <!-- Burgermenu -->
             <div id="burgermenu" class="self-center lg:hidden p-2 cursor-pointer" x-on:click="showmenu = !showmenu">
@@ -42,17 +45,18 @@ import whitelogo from "src/assets/images/white_logo.webp";
             </div>
         </div>
 
-        <nav id="mobilmenu" class="flex flex-col content-center lg:hidden text-center py-1 bg-[url('/src/img/bg.png')] bg-cover"
+        <nav id="mobilmenu" class="flex flex-col content-center lg:hidden text-center py-1  "
             x-show="showmenu" x-transition x-on:click.outside="showmenu = false">
-            <ul class="flex flex-col gap-5  ">
+            <ul class="flex flex-col gap-5    ">
      
-                <li class="border-b border-t pt-5 border-solid border-customBlack"><a href="#ommig" class="hover:font-semibold transition-all duration-200 ease-in-out">OM MIG</a></li>
-                <li class="border-b border-solid border-customBlack "><a href="#erfaring" class="hover:font-semibold transition-all duration-200 ease-in-out">ERFARING & KOMPETENCER</a></li>
-                <li class="border-b border-solid border-customBlack "><a href="#forventninger" class="hover:font-semibold  transition-all duration-200 ease-in-out">MINE FORVENTNINGER</a></li>
-                <li class="border-b border-solid border-customBlack "><a href="#" class="hover:font-semibold transition-all duration-200  ease-in-out">ig</a></li>
-                <li class=""><a href="#" class="hover:font-semibold transition-all duration-200 ease-in-out">linkedin</a></li>
-
+                <li class="font-semibold  border-t pt-5 border-solid border-customBlack"><a href="#ommig" class="hover:font-semibold transition-all duration-200 ease-in-out">OM MIG</a></li>
+                <li class="font-semibold  border-solid border-customBlack "><a href="#erfaring" class="hover:font-semibold transition-all duration-200 ease-in-out">ERFARING & KOMPETENCER</a></li>
+                <li class="font-semibold border-solid border-customBlack pb-5 "><a href="#forventninger" class="hover:font-semibold  transition-all duration-200 ease-in-out">MINE FORVENTNINGER</a></li>
             </ul>
+          <span class="border-t border-solid border-customBlack w-1/6 m-auto"> </span>
+            <a class="py-5  w-12 m-auto hover:scale-110 ease-linear duration-200"  href="">
+                <img src="src/img/linkedin.svg" alt="linkedin ikon"></a>
+            <a href="tel:+4560536233" class="pb-8 underline hover:italic duration-200 ease-linear">+45 60 53 62 33</a>
         </nav>
     </div>
 </div>
