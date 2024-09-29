@@ -7,7 +7,8 @@ import Billede from '../components/Billede.astro';
 import Heading from '../components/Heading.astro';
 import 'animate.css';
 import "aos/dist/aos.css";
-
+import {Image} from 'astro:assets';
+import Portrait from "../assets/images/portrait.jpg"
 ---
 <MainLayout title="SOFIA WENG">
 	<article class="  bg-[url('/bg.png')] bg-no-repeat bg-auto  gap-5 border-b border-solid border-customBlack grid h-85 py-10 overflow-hidden" >
@@ -36,7 +37,9 @@ import "aos/dist/aos.css";
 		<div class="w-3/4 md:w-full m-auto py-5 pb-10 "
 		data-aos="fade-right"
 		data-aos-delay="200" >
-			<Billede><img class="p-5 pb-10 m-auto" src="src/portrait3.jpg" alt=""></Billede>
+			<Billede>
+				<Image class="p-5 pb-10 m-auto src={Portrait}" />
+				<img class="p-5 pb-10 m-auto" src="src/portrait3.jpg" alt=""></Billede>
 		</div>
 		<div
 		data-aos="fade-left"
