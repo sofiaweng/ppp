@@ -1,7 +1,8 @@
 ---
 import Link from '../components/Link.astro'
 import { Image } from 'astro:assets';
-import whitelogo from "src/assets/images/white_logo.webp";
+import Logo from "../assets/images/logo.svg";
+import Linkedin from "../assets/images/linkedin.svg";
 ---
 
 
@@ -10,7 +11,7 @@ import whitelogo from "src/assets/images/white_logo.webp";
         <div id="navbar" class="p-4 flex flex-row justify-between">
             <div id="logo" class="self-center hover:scale-110 ease-linear duration-200 ">
                 <a href="/">
-                    <img class="w-28" src="/src/img/logo.svg" alt="logo">
+                    <Image class="w-28" src={Logo} alt="logo ikon"></Image>
                 </a>
             </div>
             <nav id="desktopmenu" class="hidden lg:block self-center">
@@ -21,7 +22,7 @@ import whitelogo from "src/assets/images/white_logo.webp";
                     <li class="hover:scale-110 ease-linear duration-200"><a href="#kontakt" class="font-semibold  hover:border-b-2 border-solid border-customBlack transition-all duration-200">KONTAKT</a></li>
                 </ul>
                 <a href="https://www.linkedin.com/in/sofia-weng-278525212/">
-                    <img class="w-10 hover:scale-110 duration-200 ease-linear" src="/src/img/linkedinBold.svg" alt="linkedin logo">
+                    <Image class="w-10 hover:scale-110 duration-200 ease-linear" src={Linkedin} alt="linkedin ikon"></Image>
                 </a>
             </div>
             </nav>
@@ -55,7 +56,7 @@ import whitelogo from "src/assets/images/white_logo.webp";
             </ul>
           <span class="border-t border-solid border-customBlack w-1/6 m-auto"> </span>
           <a class="py-5  w-12 m-auto hover:scale-110  ease-linear duration-200"  href="https://www.linkedin.com/in/sofia-weng-278525212/">
-                <img src="src/img/linkedin.svg" alt="linkedin ikon"></a>
+                <Image src={Linkedin} alt="linkedin ikon"></Image>
                <div class="flex flex-row self-center gap-5 "><a href="mailto:sofiaw1268@hotmail.com" class="  hover:scale-110 duration-200 ease-linear">sofiaw1268@hotmail.com</a>
                 <span>/</span>
             <a href="tel:+4560536233" class="pb-8 underline hover:scale-110  duration-200 ease-linear">+45 60 53 62 33</a>

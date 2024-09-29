@@ -9,6 +9,12 @@ import 'animate.css';
 import "aos/dist/aos.css";
 import {Image} from 'astro:assets';
 import Portrait from "../assets/images/portrait3.jpg"
+import Figma from "../assets/images/figma.svg"
+import Vscode from "../assets/images/vscode.svg"
+import Premier from "../assets/images/premier.svg"
+import Illustrator from "../assets/images/illustrator.svg"
+import Photoshop from "../assets/images/photoshop.svg"
+import Indesign from "../assets/images/indesign.svg"
 ---
 <MainLayout title="SOFIA WENG">
 	<article class="  bg-[url('/bg.png')] bg-no-repeat bg-auto  gap-5 border-b border-solid border-customBlack grid h-85 py-10 overflow-hidden" >
@@ -84,12 +90,12 @@ import Portrait from "../assets/images/portrait3.jpg"
 		data-aos="fade-up"
 		data-aos-delay="300"
 		 class="flex  flex-wrap justify-center gap-5 pb-5 px-5">
-			<img class="w-20" src="src/figma.svg" alt="figma ikon">
-			<img class="w-20" src="/src/vscode.svg" alt="vscode ikon">
-			<img class="w-20" src="src/illustrator.svg" alt="illustrator ikon">
-			<img class="w-20" src="src/indesign.svg" alt="indesign ikon">
-			<img class="w-20" src="src/premier.svg" alt="premier pro ikon">
-			<img class="w-20" src="src/photoshop.svg" alt="photoshop ikon">
+		 <Image class="w-20" src={Figma} alt="figma ikon"></Image>
+		 <Image class="w-20" src={Vscode} alt="vscode ikon"></Image>
+		 <Image class="w-20" src={Illustrator} alt="illustrator ikon"></Image>
+		 <Image class="w-20" src={Indesign} alt="indesign ikon"></Image>
+		 <Image class="w-20" src={Premier} alt="premier pro ikon"></Image>
+		 <Image class="w-20" src={Photoshop} alt="photoshop ikon"></Image>
 		</div>
 		
 		<div data-aos="fade-up"
