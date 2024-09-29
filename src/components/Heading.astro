@@ -1,6 +1,11 @@
+---
+import { Image } from 'astro:assets';
+import LinesText from "../assets/images/LinesText.svg";
+---
+
 <div class="flex flex-row justify-center relative">
     <slot></slot>
     <div class="">
-    <img class=" w-10 absolute -top-6  wiggle rotate-6 " src="src/img/linesText.svg" alt="">
+    <Image class=" w-10 absolute -top-6  wiggle rotate-6 " src={LinesText} alt="tre linjer"></Image>
 </div>
 </div>
