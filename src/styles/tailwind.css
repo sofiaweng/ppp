@@ -25,6 +25,7 @@
     @apply text-5xl;
     font-family: "Nobel", sans-serif;
     font-weight: 800;
+    font-style: normal;
     @apply uppercase;
     @apply text-center;
   }
