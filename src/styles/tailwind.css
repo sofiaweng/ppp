@@ -18,6 +18,7 @@
   html {
     font-family: "nobel", sans-serif;
     scroll-behavior: smooth;
+    font-weight: 300;
     @apply text-customBlack;
   }
   h1 {
